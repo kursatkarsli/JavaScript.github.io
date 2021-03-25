@@ -1,0 +1,55 @@
+html {
+  background: #018ded url("manzara.jpg");
+  background-size: cover;
+  font-family: "helvetica neue";
+  text-align: center;
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  font-size: 2rem;
+  /* display: flex; */
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  float: right;
+}
+.clock {
+  background: url(http://samuel-garcia.site/img/clock-sam.png);
+  background-size: cover;
+  width: 17rem;
+  height: 16rem;
+  border: 20px solid rgb(72, 255, 0);
+  border-radius: 50%;
+  margin: 50px;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 0 4px rgb(0 0 0), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgb(0 0 0 / 20%);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+}
+.hand {
+  width: 69px;
+  margin-left: 15px;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  margin-top: 6px;
+}
+
+.hour-hand {
+  background-color: rgb(255, 0, 0);
+}
+.min-hand {
+  background-color: yellowgreen;
+}
