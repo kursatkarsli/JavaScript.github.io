@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        * {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        div#diskutu {
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+            background-color: #9F3;
+        }
+
+        div.ortakutu {
+            background-color: #0CC;
+            width: 340px;
+            height: 340px;
+            margin-left: 40px;
+            margin-top: 40px;
+            float: left;
+        }
+
+        div.kucukutu {
+            background-color: #93C;
+            width: 140px;
+            height: 140px;
+            margin-left: 20px;
+            margin-top: 20px;
+            float: left;
+        }
+
+        div.minikutu {
+            background-color: #F39;
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+            margin-top: 20px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="anaclas">
+        <div id="diskutu">
+            <p>Dış Kutu</p>
+            <div class="ortakutu">
+                <div class="kucukutu">
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // document.getElementById("diskutu").addEventListener("click", e => {
+            //     console.log("Kutu-1 Tıklandı")
+            // }, false);
+            // document.querySelector(".ortakutu").addEventListener("click", e => {
+            //     console.log("Kutu-2 Tıklandı")
+            // }, false)
+
+            // document.querySelector(".kucukutu").addEventListener("click", e => {
+            //     console.log("Kutu-3 Tıklandı")
+            // }, false);
+
+
+            // Event Delegation=>
+
+            document.querySelector(".anaclas").addEventListener("click", e => {
+                if (e.target.tagName === "DIV") {
+                    console.log(`Kutu Tıklandı`)
+                }
+            });//araştır neden true false var burada.
+
+        </script>
+</body>
+
+</html>
