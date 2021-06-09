@@ -1,0 +1,20 @@
+
+.container-1{
+    border: 1px black solid;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+.flex-box-container-1{
+    display: flex;
+    border:1px black solid;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+}
